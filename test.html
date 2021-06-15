@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    function changemap() {
+        var e = document.getElementById("dropdownmenu");
+        var newSrc = e.options[e.selectedIndex].value;
+        document.getElementById("mapframe").src = newSrc;
+    }
+</script>
+
+
+<iframe height="800" id="mapframe" scrolling="no" seamless="seamless"
+    src="https://leonardas103.github.io/differential-privacy/map.html" style="border:none;" width="100%"></iframe>
+<select id="dropdownmenu" onchange="changemap();">
+    <option value="https://leonardas103.github.io/differential-privacy/map.html">Small Dataset</option>
+    <option value="https://leonardas103.github.io/differential-privacy/map2.html">Large Dataset</option>
+</select>
+<!-- <button onClick="changemap();">Update</button> -->
